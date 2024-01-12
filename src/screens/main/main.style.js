@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     },
     surface: {
         flex: 1,
-        borderRadius: 10,
+        borderRadius: 0,
         backgroundColor: '#3D405B',
       },
 });

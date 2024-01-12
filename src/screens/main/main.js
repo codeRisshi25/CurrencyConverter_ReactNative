@@ -113,7 +113,7 @@ const Main = () => {
         <Text style={styles.textBasic}>RESULT</Text>
         <Surface 
             style={{
-                height: 50,
+                height: 70,
                 width: 300,
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -129,7 +129,7 @@ const Main = () => {
                 borderRadius: 2
             }}
             surface={"flat"} >
-        {showText? <Text style={{color:'#f2f1eb'}}>{` ${currencyConverter(from,to,amount,data)} ${to}`}</Text> : null} 
+        {showText? <Text style={{fontFamily: 'monospace',color: '#F2F1EB',fontSize: 22,}}>{` ${currencyConverter(from,to,amount,data)} ${to}`}</Text> : null} 
         </Surface>
       </Surface>
     </View>
