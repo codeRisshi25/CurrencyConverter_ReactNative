@@ -9,6 +9,7 @@ import { SelectList } from "react-native-dropdown-select-list";
 import styles from "./main.style.js";
 import { Button, Surface, Divider,TextInput } from "react-native-paper";
 import axios from "axios";
+import { get } from "react-native/Libraries/TurboModule/TurboModuleRegistry.js";
 
 const endpoint = "latest";
 const apiKey = "c274a8be5b821deb60105f2522817151";
@@ -28,7 +29,7 @@ let getCurrency = () => {
     });
 };
 
-
+getCurrency();
 function currencyConverter(from, to, amount,data) {
   if (isNaN(amount)) {
     return 0;
