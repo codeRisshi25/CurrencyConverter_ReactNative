@@ -9,6 +9,7 @@ const Home = () =>{
   navigator = useNavigation();
     return (
         <View style={styles.container}>
+        <Surface style={styles.surface} elevation={3}>
         <Text style={styles.Heading}>CURRENCY CONVERTER{'\n'}{'\n'}
         <Button 
             mode={'contained'} 
@@ -19,6 +20,7 @@ const Home = () =>{
             START
         </Button>
         </Text>
+        </Surface>
         <StatusBar style="auto" />
         </View>
 
